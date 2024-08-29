@@ -1,4 +1,4 @@
-export type Callback = ((...args: unknown[]) => Promise<void>) | ((...args: unknown[]) => void) | undefined;
+export type Callback = ((...args: any[]) => Promise<void>) | ((...args: any[]) => void) | undefined;
 export interface ITransition<STATE, EVENT, CALLBACK> {
     fromState: STATE;
     event: EVENT;
